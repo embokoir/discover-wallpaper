@@ -1,0 +1,3 @@
+- Node.js (v12.16.1) 
+- Express (v4.17.1)
+- PWA

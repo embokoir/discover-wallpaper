@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Discover Wallpaper</title>
+    <link rel="shortcut icon" href="icons/favicon.png">
+    <link rel="apple-touch-icon" href="icons/favicon.png" sizes="57x57">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="manifest" href="manifest.json">
+	  <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <script>
+     if ('serviceWorker' in navigator) {
+       navigator.serviceWorker.register("service-worker.js")
+                .then(e => console.log('Service Worker Registered'))
+                .catch(err => console.log('Service Worker Register Error'))
+     } else {
+       console.log('Your Browser does not support Service Worker')
+     }
+    </script>
+  </head>
+  <body>
+    <div id="wrapper">
+      <p id="about">
+        色の組合せを見つけてスクショしよう。<br>タップかEnterキーでスタート！
+      </p>
+    </div>
+    <script type="text/javascript" src="app.js"></script>
+  </body>
+</html>
